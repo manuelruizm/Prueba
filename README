@@ -1,1 +1,3 @@
 Este es el fichero README que se añade con el primer commit.
+
+Con el fichero .gitignore pueden ignorarse ficheros para no realizarle seguimiento.
