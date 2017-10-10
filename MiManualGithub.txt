@@ -20,3 +20,4 @@ Obviamente, para quien no lo sepa, no soy redactor, no soy profesor, no soy ning
 
 Poco a poco es posible que vaya cambiando también el formato de este documento, que pase de .txt a .md, y sucesivamente a LaTeX o algún otro formato que encuentre adecuado para todo lo que quiero mostrar.
 
+*** Añado esta pequeña línea para realizar la prueba de la pregunta 1.
