@@ -1,0 +1,22 @@
+10 oct 2017
+
+Y qué mejor manera de empezar que contradiciendo una de las primeras cosas que dije ayer mismo, que era que este repositorio no iba a ser un tutorial sobre Git ni Github. Pero por suerte he tenido un momento de lucidez hoy y he pensado que qué mejor manera de aprender el buen funcionamiento de Github que precisamente resolviendo y probando todas y cada una de las dudas que me van surgiendo y, por supuesto, recogiendo cómo las resuelvo para que cuando me vuelvan a surgir estas mismas dudas no tenga que quebrarme la cabeza, o cómo no, para que si puede ser de ayuda a alguien lo utilicen y se aventuren a conocer todas las ventajas de utilizar Github.
+
+Utilizaré este archivo como un pequeño diario que iré actualizando siempre que pueda, haciéndome preguntas del funcionamiento de Github y de distintos recursos que quiera utilizar y aún no sepa. Así, intentaré hacer una mezcla entre una guía paso a paso para aprender a manejar Github y a la vez escribir las preguntas que me vayan surgiendo y la forma que he tenido de resolverlas.
+
+Además, recogeré las pequeñas curiosidades que esconde Github y que no se explican en todos los manuales.
+
+Dado que ya empecé ayer y realicé algunos pasos para la configuración y uso de un repositorio en Github con una copia en local, sabiendo que quiero recoger también esos pasos para posibles futuros iniciados y contando con el poco tiempo del que dispongo hoy, no voy a dejar escapar la oportunidad de recoger varias preguntas que me rondan la cabeza, dejando así para el próximo día el inicio de esta guía.
+
+-------------------------------------------------------------------------------
+PREGUNTAS
+
+1. Si hago un commit en local hoy pero el push a la rama remota se realiza en un día distinto, ¿qué día pinta Github como día en el que se ha realizado el commit por parte del usuario?.
+
+2. Si trabajo sobre dos repositorios descargados en local, ¿los commit que realice son independientes de la carpeta local en la que trabajo?
+-------------------------------------------------------------------------------
+
+Obviamente, para quien no lo sepa, no soy redactor, no soy profesor, no soy ningún tipo de especialista (todavía). Simplemente quiero aprender a manejar Github lo mejor posible y recoger todo mi recorrido para que el aprendizaje sea lo más duradero posible.
+
+Poco a poco es posible que vaya cambiando también el formato de este documento, que pase de .txt a .md, y sucesivamente a LaTeX o algún otro formato que encuentre adecuado para todo lo que quiero mostrar.
+
