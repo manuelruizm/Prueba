@@ -29,3 +29,63 @@ SOLUCIONES
 -------------------------------------------------------------------------------
 
 Con todo esto creo que es el momento de empezar la guía paso a paso para la puesta a punto y aprendizaje de Github.
+
+1. Los inicios
+
+Github es una plataforma de desarrollo colaborativo que se utiliza principalmente para alojar proyectos utilizando un sistema de control de versiones.
+
+Para crearse una cuenta es suficiente con escribir en tu navegador "github.com" y seguir los pasos que se indican tras pulsar "Sign up" para registrarse. Hay que indicar un "Username", el cual formará parte de tu direccionamiento en la plataforma de GitHub, de forma que la URL de tu directorio será "https://github.com/<username>". Tras completar el proceso de registro, la verificación de email y demás tareas iniciales estás listo para empezar a aprender el funcionamiento de GitHub.
+
+2. Crea tu primer repositorio
+
+Mi idea con GitHub era poder tener mis proyectos en local para trabajar tanto cuando tenga acceso a la red como cuando no, pero que a la vez estén alojados en un lugar remoto con control de versiones para poder obtener los beneficios de este sistema siempre que quiera.
+
+Lo primero que hay que hacer es crear un repositorio. Para ello hay que pulsar el botón desplegable con el símbolo "+" en la parte superior derecha del navegador. Una vez ahí, hay que pulsar "New repository". Entonces se accederá al asistente de creación de un nuevo repositorio. Si eres nuevo en esto, basta con rellenar el campo "Repository name" y pulsar el botón "Create repository". Así se habrá creado un repositorio remoto en tu cuenta personal de GitHub. Hay que decir que este repositorio es público ya que en principio solo estoy teniendo en cuenta el uso de una cuenta gratuita de GitHub. Se pueden obtener permisos para tener repositorios privados adquiriendo distintos tipos de suscripciones de pago a la plataforma. Además, este repositorio tiene su propia dirección de acceso en "github.com/<username>/<nombre-repositorio>". En mi caso está en "github.com/manuelruizm/Prueba".
+
+Una vez que se tiene el repositorio en remoto es el momento de descargarlo en local para poder trabajar con él. Yo lo que he hecho ha sido crear un directorio llamado "GitHub" en mi sistema de ficheros, en mi ruta de usuario (~/GitHub). Esto lo he hecho con la idea de que todos mis repositorios de GitHub estén almacenados en local dentro de ese directorio de mi sistema de ficheros.
+
+Ahora, haciendo uso de una terminal cuya ruta de trabajo sea justamente la elegida para almacenar los proyectos en local, en mi caso "~/GitHub", vamos a clonar el repositorio remoto para tenerlo en nuestro sistema de ficheros. La orden que hay que utilizar para ello es la siguiente ($$ simula el prompt de la terminal):
+
+$$ git clone <dirección-repositorio-remoto>
+
+Para conseguir la dirección de nuestro repositorio en remoto y poder pasársela a la orden anterior me voy a mi repositorio en el navegador. Ahí se puede ver a la derecha un botón verde que pone "Clone or download". Pulsando sobre él se abre un pop-up llamado "Clone with HTTPS". Copiando esa URL y pegándola en la terminal junto a esa orden habremos conseguido descargar nuestro repositorio en local. Ya estamos listos para empezar a desarrollar nuestro proyecto.
+
+3. Comandos básicos en GitHub
+
+Una vez que tenemos nuestro repositorio en local, en mi caso en la ruta "~/GitHub/Prueba", es el momento de empezar a desarrollar el proyecto. Para ello basta con ir añadiendo ficheros, directorios y demás recursos en esta carpeta, la cual tiene inicialmente sólo un fichero llamado ".git". Este fichero (oculto) mantiene toda la estructura interna de tu repositorio, todas las versiones de tu proyecto y muchas cosas más de Git que no voy a entrar a explicar ahora mismo.
+
+El primer comando que vamos a aprender es "git status". Este comando nos muestra el estado actual de nuestro proyecto en local con respecto a la situación en la que se sincronizó por última vez con el repositorio remoto. Si lo comprobamos con nuestro repositorio recién clonado obtendremos lo siguiente (para ello hay que situarse ya dentro del proyecto, en "~/GitHub/Prueba"):
+
+$$ git status
+
+>> On branch master
+>> Your branch is up-to-date with 'origin/master'.
+>>
+>> nothing to commit, working tree clean
+
+Esto quiere decir básicamente que nuestro proyecto no ha cambiado desde que se sincronizó con el remoto.
+
+Este comando es muy útil, como veremos más adelante, para conocer el estado actual de todos los ficheros de nuestro proyecto.
+
+Ahora vamos a crear en el proyecto local un primer fichero que tenga un pequeño programa, por ejemplo "HolaMundo.cpp" escrito en C++. Para ver qué ha ocurrido en nuestro proyecto utilizamos el comando git status y obtenemos, entre otras cosas, lo siguiente:
+
+>> Untracked files:
+>>     (use "git add <file>..." to include in what will be committed)
+>>
+>>         HolaMundo.cpp
+
+Esto nos indica que ese fichero no está bajo seguimiento por el repositorio, es decir, que no se encuentra dentro del control de versiones. Además, el propio mensaje te indica cómo se puede incluir este fichero en el control de versiones. Para iniciar el seguimiento de un fichero creado (o incorporado) en nuestro proyecto hay que utilizar el comando "git add". Veamos cómo:
+
+$$ git add <nombre-fichero>
+
+$$ git add HolaMundo.cpp
+
+Tras realizar esta orden es posible que no salga nada en la terminal. Para saber si ha ocurrido algo, nuevamente vamos a utilizar el comando "git status". El resultado obtenido será este:
+
+>> Changes to be committed:
+>>     (use "git reset HEAD <file>..." to unstage)
+>>
+>>         new file:   HolaMundo.cpp
+
+Así, se ha iniciado el seguimiento a un nuevo fichero y además nos dice que está listo para ser confirmado ("Changes to be comitted"), es decir, que en la próxima captura que se realice para el control de versiones se incluirá el fichero nuevo.
+
