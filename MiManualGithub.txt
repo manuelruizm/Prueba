@@ -20,4 +20,12 @@ Obviamente, para quien no lo sepa, no soy redactor, no soy profesor, no soy ning
 
 Poco a poco es posible que vaya cambiando también el formato de este documento, que pase de .txt a .md, y sucesivamente a LaTeX o algún otro formato que encuentre adecuado para todo lo que quiero mostrar.
 
-*** Añado esta pequeña línea para realizar la prueba de la pregunta 1.
+11 oct 2017
+
+-------------------------------------------------------------------------------
+SOLUCIONES
+
+1. Ayer hice un commit en local y al final no lo subí al remoto haciendo push. Quería comprobar qué fecha aparecía en Github subiéndolo un día distinto. Hoy he hecho push directamente y, efectivamente, Github almacena perfectamente la fecha real en la que se hizo el commit, es decir, la fecha de ayer.
+-------------------------------------------------------------------------------
+
+Con todo esto creo que es el momento de empezar la guía paso a paso para la puesta a punto y aprendizaje de Github.
