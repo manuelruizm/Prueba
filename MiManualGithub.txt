@@ -67,7 +67,7 @@ Esto quiere decir básicamente que nuestro proyecto no ha cambiado desde que se 
 
 Este comando es muy útil, como veremos más adelante, para conocer el estado actual de todos los ficheros de nuestro proyecto.
 
-Ahora vamos a crear en el proyecto local un primer fichero que tenga un pequeño programa, por ejemplo "HolaMundo.cpp" escrito en C++. Para ver qué ha ocurrido en nuestro proyecto utilizamos el comando git status y obtenemos, entre otras cosas, lo siguiente:
+Ahora vamos a crear en el proyecto local un primer fichero que tenga un pequeño programa, por ejemplo "HolaMundo.cpp" escrito en C++. Para ver qué ha ocurrido en nuestro proyecto utilizamos el comando "git status" y obtenemos, entre otras cosas, lo siguiente:
 
 >> Untracked files:
 >>     (use "git add <file>..." to include in what will be committed)
@@ -89,3 +89,12 @@ Tras realizar esta orden es posible que no salga nada en la terminal. Para saber
 
 Así, se ha iniciado el seguimiento a un nuevo fichero y además nos dice que está listo para ser confirmado ("Changes to be comitted"), es decir, que en la próxima captura que se realice para el control de versiones se incluirá el fichero nuevo.
 
+12 oct 2017
+
+Como dice justo antes, los cambios realizados están listos para ser confirmados ("to be commited"). Esto quiere decir que ya forman parte del repositorio local, pero falta capturarlos como parte de una nueva versión de nuestro proyecto. Para ello vamos a utilizar el comando "git commit". Es obligatorio escribir un mensaje con cada commit que exprese los cambios incorporados en la nueva versión.
+
+$$ git commit -m "Nuevo fichero incluido"
+
+Este comando dará una salida en la que a modo de resumen se mostrarán los cambios introducidos. Cada vez que se realice un commit se confirmarán todos los archivos que se encuentren "preparados para ser confirmados".
+
+Con esto ya tendremos los nuevos cambios registrados en nuestro repositorio local. Así podemos seguir trabajando y modificando nuestro proyecto sin necesidad de estar conectados a la red y creando una versión de nuestro proyecto cada vez que consideremos oportuno.
