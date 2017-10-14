@@ -98,3 +98,23 @@ $$ git commit -m "Nuevo fichero incluido"
 Este comando dará una salida en la que a modo de resumen se mostrarán los cambios introducidos. Cada vez que se realice un commit se confirmarán todos los archivos que se encuentren "preparados para ser confirmados".
 
 Con esto ya tendremos los nuevos cambios registrados en nuestro repositorio local. Así podemos seguir trabajando y modificando nuestro proyecto sin necesidad de estar conectados a la red y creando una versión de nuestro proyecto cada vez que consideremos oportuno.
+
+14 oct 2017
+
+Ya hemos creado el repositorio, trabajamos en local con él, añadimos ficheros y confirmamos los cambios. Ahora solo queda sincronizar nuestro repositorio local con el remoto para que los cambios se almacenen también en el remoto y poder seguir su desarrollo directamente a través de GitHub.
+
+Para ello vamos a usar el comando "git push", el cual sirve para que los cambios realizados en local se guarden en remoto. La sintaxis del comando es la siguiente:
+
+$$ git push <nombre-repositorio-remoto> <nombre-rama>
+
+Eso del nombre del repositorio remoto y el nombre de la rama los explicaré más adelante cuando aprenda algo más sobre ramas y bifurcaciones, pero de momento basta con saber que el comando que hay que escribir es:
+
+$$ git push origin master
+
+Una vez hecho esto pueden ocurrir varias cosas:
+
+1. Que el push se realice correctamente y los cambios se sincronicen sin problemas con el repositorio remoto (se mostrarán datos de los cambios añadidos al repositorio).
+2. Que al realizar el push, la configuración local de git no conozca el nombre de usuario de quien lo realiza y te pida que indiques tu nombre de usuario y tu email.
+3. Que haya algún conflicto (aunque trabajando en local y solo una persona de momento no debería de ocurrir nada de esto).
+
+Si ahora accedes a tu página web de GitHub y miras el repositorio del proyecto actual se podrán ver los cambios registrados, así como los commits realizados. Con esto ya tendríamos actualizado nuestro proyecto en GitHub.
