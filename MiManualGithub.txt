@@ -118,3 +118,25 @@ Una vez hecho esto pueden ocurrir varias cosas:
 3. Que haya algún conflicto (aunque trabajando en local y solo una persona de momento no debería de ocurrir nada de esto).
 
 Si ahora accedes a tu página web de GitHub y miras el repositorio del proyecto actual se podrán ver los cambios registrados, así como los commits realizados. Con esto ya tendríamos actualizado nuestro proyecto en GitHub.
+
+15 oct 2017
+
+¿Qué pasa si ahora quiero seguir modificando mi proyecto en local? Ya tienes las herramientas básicas para conocer el funcionamiento de GitHub, el cual funciona en ciclo. Para conocer el funcionamiento de ese ciclo tengo que añadir que el comando "git add" no solo sirve para añadir ficheros nuevos, sino que ante cualquier cambio realizado sirve también para preparar un fichero para que se pueda realizar commit sobre él.
+
+Es decir, el ciclo de funcionamiento es el siguiente:
+
+1. Creo fichero nuevo.
+2. git add de fichero nuevo para empezar seguimiento.
+3. git commit para guardar cambios.
+4. git push para sincronizar con remoto.
+5. Modificación de ficheros.
+6. git add para preparar ficheros.
+7. git commit para guardar cambios.
+8. git push para sincronizar con remoto.
+
+Y vuelta a empezar.
+
+En realidad no es necesario realizar tantos commit ni tantos push. Puedes hacer varias veces seguidas git add de distintos ficheros que estes modificando simultáneamente y después realizar un único git commit que confirme todos los cambios realizados hasta el momento. Del mismo modo, si se realizan varios commit a lo largo de un día por ejemplo, puedes al finalizar realizar un git push para que se sincronicen todos directamente con el repositorio remoto.
+
+Con esto ya estás listo para poder hacer un uso básico de GitHub y poder trabajar con tus proyectos en local a la vez que mantienes un sistema de control de versiones gracias a la plataforma de GitHub.
+
