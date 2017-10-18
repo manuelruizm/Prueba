@@ -151,3 +151,7 @@ $$ git config --global user.name "<nombre-usuario-GitHub>"
 $$ git config --global user.email "<email-GitHub>"
 
 Con esto, los siguientes commit y push que realices no debería de pedirte el nombre de usuario y el email ya que los cogerá directamente de este fichero y, además, los cambios estarán registrados en GitHub con tu nombre de usuario, tu foto y todo perfecto.
+
+18 oct 2017
+
+- En muchas ocasiones, cuando estás trabajando sólo sobre una única rama, en nuestro caso la rama master, y con un único repositorio remoto, en nuestro caso el repositorio origin, es posible que git te permita abreviar la orden push únicamente poniendo el comando "git push". Git reconocerá directamente el nombre del repositorio y de la rama y podrás ahorrártelos.
